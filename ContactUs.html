@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Abusers-Contact Us</title>
+    <link rel='stylesheet' href='style.css'>
+    <link rel='stylesheet' href='contact.css'>
+
+        
+</head>
+<body>
+    <header>
+        <section>
+            <img src="images/CoffeeAbusersLogo.png" width="200" height="150" alt="logo">
+            <nav >
+                <ul>
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="Story.html" >Our Story</a></li>
+                    <li><a style="color:green" href="ContactUs.html" >Contact Us</a></li>
+                </ul>
+            </nav>
+        </section>    
+    </header>
+    <main>
+        <section>
+            <form method="post" action="mailto:jalko579@mtroyal.ca">
+                <label>Subject:
+                    <input name="name" type="text" size="25" maxlength="50" required>
+                </label>
+                <br>
+                <label>Body:
+                    <input required rows='10' cols="50" required>
+                    </input>
+                </label>
+                <br>
+                <label>Email:
+                    <input name="email" type="text" size="25" maxlength="50" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="name@domain.com">
+                </label>
+                <br>
+                <label>Phone Number (optional):
+                    <input name="phone" type="text" size="25" maxlength="20" required pattern="[0-9]{3}[\-][0-9]{3}[\-][0-9]{4}" placeholder="xxx-yyy-zzzz">
+                </label>
+                <br>
+                <p class="intro">How did you hear about us ?:<br />
+                    <label>Friend: <input name='hear' type='radio' value="Friend">
+                    </label><br />
+                    <label>Advertisment: <input name='hear' type='radio' value="Advertisment">
+                    </label><br />
+                    <label>Social media: <input name='hear' type='radio' value="Social media">
+                    </label><br />
+                    <label>other: <input name='hear' type='radio' value="other">
+                    </label><br />
+                    <p> Do you want to recieve news:<br />
+                        <label>New Blend: <input name='news' type='checkbox' value="New Blend">
+                        </label><br />
+                        <label>Company news: <input name='news' type='checkbox' value="Company news">
+                        </label><br />
+                        <label>Fun Coffee information: <input name='news' type='checkbox' value="Fun Coffee information">
+                        </label><br />
+                    <label>Your Birthday: <input name='event_date' type='date'>
+                    </label>   
+                    <br>
+                    <input type='reset' value='Clear'>
+                    <input type='submit' value='Submit'>
+            </form>
+        </section>
+    </main>    
+    <footer>
+        <a href="https://en.wikipedia.org/wiki/Coffee" target="_blank">learn more about Coffee</a>
+    </footer>
+</body>
+
+</html>

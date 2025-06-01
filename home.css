@@ -1,0 +1,16 @@
+.intro::first-letter{
+    font-size: large;
+    color:red;
+}
+
+tr:nth-child(even)
+{
+    background-color: purple;
+}
+tr:nth-child(odd)
+{
+    background-color: green;
+}
+.float-right{
+    float: right;
+}
